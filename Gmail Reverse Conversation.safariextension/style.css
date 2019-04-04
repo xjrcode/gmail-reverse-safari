@@ -1,0 +1,79 @@
+/**
+ * Copy of https://gitlab.com/redribbon/gmail-reverse/
+ */
+div[role=list]:not(.brd) {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+div[role=listitem] {
+    flex: 0 0 auto;
+}
+
+div[role=listitem].h7>div>div>div>div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+div[role=listitem].h7>div>div>div>div>div {
+    flex: 0 0 auto;
+}
+.kQ {
+    margin: 1px;
+}
+
+/*reverse printing veiw*/
+body:not([class]) > div.bodycontainer > div.maincontent {
+    display: flex;
+    flex-direction: column-reverse;
+}
+body:not([class]) > div.bodycontainer > div.maincontent > table:nth-child(1) {
+    order: 1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+
+/* response field height */
+div.amn {
+    height:25px !important;
+}
+div[role=listitem] .gB.xu {
+    border-bottom: 0px !important;
+}
+
+/* frames */
+div[role=listitem].kv>div>div,
+div[role=listitem].kQ>div>div,
+div[role=listitem].h7>div>div {
+    border-top: 0 !important;
+    border-bottom: 1px solid #d8d8d8 !important;
+}
+
+div[role=listitem].h7:last-child .adn {
+    border-top: 1px solid #d8d8d8 !important;
+    border-bottom: 0 solid #d8d8d8 !important;
+    padding-top: 5px !important;
+    margin-top: 10px !important;
+}
+/* response and forward buttons */
+.h7.ie .gA>.gB>.ip {
+    padding: 5px 0 !important;
+}
+.h7.ie .gA>.gB>.ip .brb {
+    margin-bottom: 14px !important;
+    padding-bottom: 3px !important;
+}
+
+/* fixed addresses bar */
+.Bk td.I5>form.bAs>div:nth-child(1) {
+    height: 0px !important;
+}
+.Bk td.I5>form.bAs>div:nth-child(2) {
+    position: static !important;
+}
+.Bk div.ajn.azy {
+    position: static !important;
+}
